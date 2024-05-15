@@ -1,0 +1,20 @@
+{"level":"ERROR","ts":"2024-05-14 20:50:48.212","caller":"config/config.go:34","msg":"read cdn config error:","reason:":"open config.yaml: The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 20:55:45.617","caller":"config/config.go:36","msg":"read cdn config error:","reason:":"open D:/GO_SDK/go1.2.2.1/src/runtime/proc.go/config.yaml: The system cannot find the path specified."}
+{"level":"ERROR","ts":"2024-05-14 21:55:01.317","caller":"config/config.go:39","msg":"read cdn config error:","reason":"cdn auth config.yaml path is nil"}
+{"level":"ERROR","ts":"2024-05-14 21:55:01.330","caller":"config/config.go:43","msg":"read cdn config error:","reason:":"open : The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 21:55:01.365","caller":"config/config.go:43","msg":"read cdn config error:","reason:":"open ./config.yaml: The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 21:56:02.947","caller":"config/config.go:39","msg":"read cdn config error:","reason":"cdn auth config.yaml path is nil"}
+{"level":"ERROR","ts":"2024-05-14 21:56:02.962","caller":"config/config.go:43","msg":"read cdn config error:","reason:":"open : The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 21:56:03.001","caller":"config/config.go:43","msg":"read cdn config error:","reason:":"open ./config.yaml: The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 21:56:40.144","caller":"config/config.go:39","msg":"read cdn config error:","reason":"cdn auth config.yaml path is nil"}
+{"level":"ERROR","ts":"2024-05-14 21:56:40.159","caller":"config/config.go:43","msg":"read cdn config error:","reason:":"open : The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 21:56:42.395","caller":"config/config.go:43","msg":"read cdn config error:","reason:":"open ./config.yaml: The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 21:56:48.330","caller":"config/config.go:39","msg":"read cdn config error:","reason":"cdn auth config.yaml path is nil"}
+{"level":"ERROR","ts":"2024-05-14 21:56:48.343","caller":"config/config.go:43","msg":"read cdn config error:","reason:":"open : The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 21:56:51.792","caller":"config/config.go:43","msg":"read cdn config error:","reason:":"open ./config.yaml: The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 21:57:56.418","caller":"config/config.go:39","msg":"read cdn config error:","reason":"cdn auth config.yaml path is nil"}
+{"level":"ERROR","ts":"2024-05-14 21:57:56.433","caller":"config/config.go:43","msg":"read cdn config error:","reason:":"open : The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 22:57:19.173","caller":"config/config.go:47","msg":"read cdn config error:","reason:":"open ./cdn-check/config/config.yaml: The system cannot find the path specified."}
+{"level":"ERROR","ts":"2024-05-14 22:58:21.112","caller":"config/config.go:47","msg":"read cdn config error:","reason:":"open ./cdn-check/config/config.yaml: The system cannot find the path specified."}
+{"level":"ERROR","ts":"2024-05-14 23:02:26.315","caller":"config/config.go:47","msg":"read cdn config error:","reason:":"open ./cdn-check/config/config.yaml: The system cannot find the path specified."}
+{"level":"ERROR","ts":"2024-05-14 23:02:28.076","caller":"config/config.go:47","msg":"read cdn config error:","reason:":"open ./config/fig.yaml: The system cannot find the file specified."}

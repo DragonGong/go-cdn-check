@@ -1,0 +1,4 @@
+{"level":"ERROR","ts":"2024-05-14 20:43:53.858","caller":"config/config.go:34","msg":"read cdn config error:","reason:":"open config.yaml: The system cannot find the file specified."}
+{"level":"ERROR","ts":"2024-05-14 21:33:07.236","caller":"config/config.go:36","msg":"read cdn config error:","reason:":"open D:/GO_SDK/go1.2.2.1/src/runtime/proc.go/config.yaml: The system cannot find the path specified."}
+{"level":"ERROR","ts":"2024-05-14 21:54:47.403","caller":"config/config.go:39","msg":"read cdn config error:","reason":"cdn auth config.yaml path is nil"}
+{"level":"ERROR","ts":"2024-05-14 21:54:47.416","caller":"config/config.go:43","msg":"read cdn config error:","reason:":"open : The system cannot find the file specified."}
