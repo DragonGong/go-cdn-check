@@ -13,7 +13,7 @@ type GithubChecker struct {
 func NewGithubChecker() Checker {
 	return &GithubChecker{
 		client:            cdncheck.New(),
-		cdnCheckerManager: NewCdnCheckerManager("github", make(chan struct{}, githubQps), githubQps, githubMaxIpsNums),
+		cdnCheckerManager: NewCdnCheckerManager("github", githubQps, githubMaxIpsNums),
 	}
 }
 func (g GithubChecker) CheckConfig() bool {

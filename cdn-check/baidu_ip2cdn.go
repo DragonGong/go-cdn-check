@@ -24,7 +24,7 @@ func NewBaiduChecker() Checker {
 	client, _ := cdn.NewClient(ak, sk, endpoint)
 	return &BaiduChecker{
 		client:            client,
-		cdnCheckerManager: NewCdnCheckerManager("baidu", make(chan struct{}, baiduQps), baiduQps, baiduMaxIpsNums),
+		cdnCheckerManager: NewCdnCheckerManager("baidu", baiduQps, baiduMaxIpsNums),
 	}
 }
 

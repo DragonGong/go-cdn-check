@@ -55,7 +55,7 @@ func NewAlibabaChecker() Checker {
 		maxConcurrency:    20,
 		runtime:           &util.RuntimeOptions{},
 		client:            client,
-		cdnCheckerManager: NewCdnCheckerManager("alibaba", make(chan struct{}, alibabaQps), alibabaQps, alibabaMaxIpsNums),
+		cdnCheckerManager: NewCdnCheckerManager("alibaba", alibabaQps, alibabaMaxIpsNums),
 	}
 }
 

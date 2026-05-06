@@ -50,7 +50,7 @@ func NewWangsuChecker() Checker {
 			Method:    "POST",
 			EndPoint:  "open.chinanetcenter.com",
 		},
-		cdnCheckerManager: NewCdnCheckerManager("wangsu", make(chan struct{}, wangsuQps), wangsuQps, wangsuMaxIpsNums),
+		cdnCheckerManager: NewCdnCheckerManager("wangsu", wangsuQps, wangsuMaxIpsNums),
 	}
 }
 func (w *WangsuChecker) CheckConfig() bool {

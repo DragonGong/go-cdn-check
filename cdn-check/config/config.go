@@ -6,9 +6,11 @@ import (
 	"gopkg.in/yaml.v2"
 	"os"
 	"strings"
+	"sync"
 )
 
 var CdnConfig = &CdnProviderAuth{}
+var configMu sync.RWMutex
 
 type CdnProviderAuth struct {
 	Baidu   BaiduCdn   `yaml:"Baidu"`
@@ -70,7 +72,15 @@ func LoadFromEnv() CdnProviderAuth {
 }
 
 func SetConfig(cfg CdnProviderAuth) {
+	configMu.Lock()
+	defer configMu.Unlock()
 	*CdnConfig = cfg
+}
+
+func GetConfig() CdnProviderAuth {
+	configMu.RLock()
+	defer configMu.RUnlock()
+	return *CdnConfig
 }
 
 func mergeEnvOverrides(cfg CdnProviderAuth) CdnProviderAuth {

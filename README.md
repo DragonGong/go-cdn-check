@@ -7,6 +7,8 @@ It supports two usage modes:
 - Zero-config offline detection via `projectdiscovery/cdncheck`
 - Provider API based detection for Baidu CDN, Alibaba CDN, and Wangsu when credentials are supplied
 
+The root package is the supported public API. The `cdn-check/...` subpackages are internal implementation details.
+
 ## Install
 
 ```bash
@@ -25,12 +27,14 @@ import (
 )
 
 func main() {
-	result := gocdncheck.Check([]string{
+	detector := gocdncheck.New()
+	result := detector.Check([]string{
 		"1.1.1.1",
 		"8.8.8.8",
 		"120.52.22.96",
 	})
 	fmt.Println(result)
+	fmt.Println(result.CDNIPs())
 }
 ```
 
@@ -50,25 +54,28 @@ export GO_CDN_CHECK_WANGSU_SECRET_KEY="..."
 Then:
 
 ```go
-gocdncheck.LoadConfigFromEnv()
-checker := gocdncheck.New()
-result := checker.CdnCheckFilter([]string{"116.114.98.35"})
+detector := gocdncheck.NewFromEnv()
+result := detector.Check([]string{"116.114.98.35"})
 ```
 
 Or load a local config file:
 
 ```go
-err := gocdncheck.LoadConfig("./cdn-check/config/config.local.yaml")
+detector, err := gocdncheck.NewFromConfigFile("./cdn-check/config/config.local.yaml")
 if err != nil {
 	panic(err)
 }
-checker := gocdncheck.New()
+_ = detector
 ```
 
 A sample config file is available at [cdn-check/config/config.example.yaml](./cdn-check/config/config.example.yaml).
 
+Runnable examples are available in [examples/basic](./examples/basic) and [examples/from-env](./examples/from-env).
+
 ## Notes
 
+- Public usage should depend on the root package `github.com/clouddragongong/go-cdn-check`.
+- Prefer `Detector.Check` / `Detector.CheckOversea`; `CdnCheckFilter` and `CdnCheckOversea` are legacy compatibility names.
 - Real credentials are no longer stored in the repository.
 - Log files and local credential files are ignored by git.
 - By default the package only logs to stdout. Set `GO_CDN_CHECK_LOG_DIR` if you want file logs.
