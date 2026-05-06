@@ -1,0 +1,7 @@
+log/
+logs/
+*.log
+
+cdn-check/config/config.local.yaml
+cdn-check/logs/
+cdn-check/config/logs/
