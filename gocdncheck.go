@@ -1,8 +1,8 @@
 package gocdncheck
 
 import (
-	cdncheck "github.com/clouddragongong/go-cdn-check/cdn-check"
-	"github.com/clouddragongong/go-cdn-check/cdn-check/config"
+	cdncheck "github.com/dragongong/go-cdn-check/cdn-check"
+	"github.com/dragongong/go-cdn-check/cdn-check/config"
 )
 
 // ProviderCredentials contains the access key pair for a single CDN provider.

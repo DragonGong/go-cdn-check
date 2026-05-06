@@ -2,7 +2,7 @@ package config
 
 import (
 	"errors"
-	"github.com/clouddragongong/go-cdn-check/logger"
+	"github.com/dragongong/go-cdn-check/logger"
 	"gopkg.in/yaml.v2"
 	"os"
 	"strings"

@@ -3,9 +3,9 @@ package sdk_demo
 import (
 	"encoding/json"
 	"fmt"
-	cdnCheck "github.com/clouddragongong/go-cdn-check/cdn-check"
-	"github.com/clouddragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/api/client"
-	"github.com/clouddragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/common/auth"
+	cdnCheck "github.com/dragongong/go-cdn-check/cdn-check"
+	"github.com/dragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/api/client"
+	"github.com/dragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/common/auth"
 	"os"
 )
 

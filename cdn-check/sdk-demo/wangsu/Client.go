@@ -2,8 +2,8 @@ package wangsu
 
 import (
 	"fmt"
-	"github.com/clouddragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/api/client"
-	"github.com/clouddragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/common/auth"
+	"github.com/dragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/api/client"
+	"github.com/dragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/common/auth"
 )
 
 func main() {

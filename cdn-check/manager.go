@@ -1,7 +1,7 @@
 package cdn_check
 
 import (
-	"github.com/clouddragongong/go-cdn-check/logger"
+	"github.com/dragongong/go-cdn-check/logger"
 	"sync"
 	"sync/atomic"
 	"time"

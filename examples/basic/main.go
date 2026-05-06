@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	gocdncheck "github.com/clouddragongong/go-cdn-check"
+	gocdncheck "github.com/dragongong/go-cdn-check"
 )
 
 func main() {

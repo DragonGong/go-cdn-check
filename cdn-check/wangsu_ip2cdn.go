@@ -3,9 +3,9 @@ package cdn_check
 import (
 	"encoding/json"
 	"errors"
-	"github.com/clouddragongong/go-cdn-check/cdn-check/config"
-	"github.com/clouddragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/api/client"
-	"github.com/clouddragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/common/auth"
+	"github.com/dragongong/go-cdn-check/cdn-check/config"
+	"github.com/dragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/api/client"
+	"github.com/dragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/common/auth"
 )
 
 type WangsuChecker struct {

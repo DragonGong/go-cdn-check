@@ -3,7 +3,7 @@ package cdn_check
 import (
 	"errors"
 	"github.com/baidubce/bce-sdk-go/services/cdn"
-	"github.com/clouddragongong/go-cdn-check/cdn-check/config"
+	"github.com/dragongong/go-cdn-check/cdn-check/config"
 	"time"
 )
 

@@ -1,7 +1,7 @@
 package util
 
 import (
-	"github.com/clouddragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/common/model"
+	"github.com/dragongong/go-cdn-check/cdn-check/sdk-demo/wangsu/common/model"
 	"io"
 	"io/ioutil"
 	"net/http"

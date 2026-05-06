@@ -1,4 +1,4 @@
-module github.com/clouddragongong/go-cdn-check
+module github.com/dragongong/go-cdn-check
 
 go 1.24.0
 

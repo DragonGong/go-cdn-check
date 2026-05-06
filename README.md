@@ -12,7 +12,7 @@ The root package is the supported public API. The `cdn-check/...` subpackages ar
 ## Install
 
 ```bash
-go get github.com/clouddragongong/go-cdn-check
+go get github.com/dragongong/go-cdn-check
 ```
 
 ## Quick Start
@@ -23,7 +23,7 @@ package main
 import (
 	"fmt"
 
-	gocdncheck "github.com/clouddragongong/go-cdn-check"
+	gocdncheck "github.com/dragongong/go-cdn-check"
 )
 
 func main() {
@@ -74,7 +74,7 @@ Runnable examples are available in [examples/basic](./examples/basic) and [examp
 
 ## Notes
 
-- Public usage should depend on the root package `github.com/clouddragongong/go-cdn-check`.
+- Public usage should depend on the root package `github.com/dragongong/go-cdn-check`.
 - Prefer `Detector.Check` / `Detector.CheckOversea`; `CdnCheckFilter` and `CdnCheckOversea` are legacy compatibility names.
 - Real credentials are no longer stored in the repository.
 - Log files and local credential files are ignored by git.

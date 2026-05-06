@@ -2,7 +2,7 @@ package cdn_check
 
 import (
 	"fmt"
-	"github.com/clouddragongong/go-cdn-check/logger"
+	"github.com/dragongong/go-cdn-check/logger"
 	"github.com/projectdiscovery/cdncheck"
 	"net"
 )
