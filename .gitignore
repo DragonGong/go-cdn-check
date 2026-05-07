@@ -3,5 +3,6 @@ logs/
 *.log
 
 cdn-check/config/config.local.yaml
+cdn-check/config/config.yaml
 cdn-check/logs/
 cdn-check/config/logs/
